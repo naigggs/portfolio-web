@@ -7,6 +7,7 @@ import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
 import { fontSans, fontOrbitron } from "@/config/fonts";
+import Template from "./template";
 
 export const metadata: Metadata = {
   title: {
@@ -42,7 +43,7 @@ export default function RootLayout({
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <div className="relative flex flex-col h-screen">
-            <main className="">{children}</main>{" "}
+            <Template>{children}</Template>
             {/* <footer className="w-full flex items-center justify-center py-3">
               <Link
                 isExternal

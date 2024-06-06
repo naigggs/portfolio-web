@@ -2,9 +2,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function Portfolio() {
+export default function Clippy() {
   const variants = {
-    hidden: { opacity: 0, x: 0, y: 20 },
+    hidden: { opacity: 0, x: 0, y: 20},
     enter: { opacity: 1, x: 0, y: 0 },
   };
   return (
@@ -14,7 +14,7 @@ export default function Portfolio() {
       animate="enter"
       transition={{ type: "linear" }}
     >
-      <div className="text-center text-9xl">Portfolio</div>
+      <div className="text-center text-9xl">Clippy</div>
     </motion.main>
   );
 }
