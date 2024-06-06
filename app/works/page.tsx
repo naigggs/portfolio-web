@@ -13,7 +13,7 @@ const projectData = [
   { title: "Delivio", description: "A delivery management platform." },
   { title: "PFlix", description: "A streaming service for movies and shows." },
   { title: "Portfolio", description: "My personal portfolio website." },
-  { title: "TBA.", description: "Coming Soon!" },
+  { title: "TBA", description: "Coming Soon!" },
 ];
 
 export default function Works() {
