@@ -6,8 +6,18 @@ import clsx from "clsx";
 import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
-import { fontSans, fontOrbitron } from "@/config/fonts";
+import { fontSans, fontOrbitron, fontPressStart } from "@/config/fonts";
 import Template from "./template";
+import useDisableMouse from "@/components/disablemouse";
+import useKeyboardNavigation from "@/components/keyboardnavigation";
+import { Chip } from "@nextui-org/chip";
+import {
+  ChevronDown,
+  ChevronLeft,
+  ChevronRight,
+  ChevronUp,
+} from "lucide-react";
+import BackgroundMusic from "@/components/backgroundmusic";
 
 export const metadata: Metadata = {
   title: {
@@ -37,25 +47,14 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          "min-h-screen bg-background text-foreground antialiased font-orbitron overflow-hidden",
-          fontOrbitron.variable
+          "min-h-screen bg-background container text-foreground antialiased overflow-hidden",
+          fontPressStart.className,
+          fontSans.variable
         )}
       >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
-          <div className="relative flex flex-col h-screen">
-            <Template>{children}</Template>
-            {/* <footer className="w-full flex items-center justify-center py-3">
-              <Link
-                isExternal
-                className="flex items-center gap-1 text-current"
-                href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-                title="nextui.org homepage"
-              >
-                <span className="text-default-600">Powered by</span>
-                <p className="text-primary">NextUI</p>
-              </Link>
-            </footer> */}
-          </div>
+        <BackgroundMusic />
+        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+          <div className="relative flex flex-col h-screen">{children}</div>
         </Providers>
       </body>
     </html>

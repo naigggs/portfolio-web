@@ -10,3 +10,26 @@
     transform: skewX(180deg); /* Pre-rotate for illusion */
   }
   
+body {
+  cursor: none;
+}
+
+b{
+  cursor: none;
+}
+
+b:focus{
+  outline: none;
+}
+
+b:focus::before {
+  /* outline: none; */
+  content: '[*]'; /* Unicode arrow */
+  margin-right: 10px;
+  margin-left:-58px;
+  color: #ffffff; /* Adjust the color to your preference */ /* Or any other style to match your retro theme */
+}
+
+.character {
+
+}

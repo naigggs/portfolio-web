@@ -9,13 +9,6 @@ const variants = {
 
 export default function Template({ children }: { children: React.ReactNode }) {
   return (
-    <motion.main
-      variants={variants}
-      initial="hidden"
-      animate="enter"
-      transition={{ type: "linear" }}
-    >
-      {children}
-    </motion.main>
+<div>{children}</div>
   );
 }
