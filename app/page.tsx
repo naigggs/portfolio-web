@@ -88,47 +88,35 @@ export default function Home() {
           <div className="flex flex-row w-1/2 mx-auto mt-24">
             <div className="text-center w-full flex flex-col gap-y-10 ">
               <h1>
-                <Link href="/works">
-                  <b ref={workRef} tabIndex={1}>
-                    Works
-                  </b>
+                <Link ref={workRef} tabIndex={1} href="/works">
+                  Works
                 </Link>
               </h1>
               <h1>
-                <Link href="/about">
-                  <b ref={aboutRef} tabIndex={2}>
-                    About
-                  </b>
+                <Link ref={aboutRef} tabIndex={2} href="/about">
+                  About
                 </Link>
               </h1>
               <h1>
-                <Link href="/contact">
-                  <b ref={contactRef} tabIndex={3}>
-                    Contact
-                  </b>
+                <Link ref={contactRef} tabIndex={3} href="/contact">
+                  Contact
                 </Link>
               </h1>
             </div>
             <div className="text-center mx-auto w-full flex flex-col gap-y-10">
               <h1>
-                <Link href="/options">
-                  <b ref={ref1} tabIndex={4}>
-                    Options
-                  </b>
+                <Link ref={ref1} tabIndex={4} href="/options">
+                  Options
                 </Link>
               </h1>
               <h1>
-                <Link href="#">
-                  <b ref={ref2} tabIndex={5}>
-                    T.B.A.
-                  </b>
+                <Link ref={ref2} tabIndex={5} href="#">
+                  T.B.A.
                 </Link>
               </h1>
               <h1>
-                <Link href="/c#">
-                  <b ref={ref3} tabIndex={6}>
-                    T.B.A.
-                  </b>
+                <Link ref={ref3} tabIndex={6} href="/#">
+                  T.B.A.
                 </Link>
               </h1>
             </div>

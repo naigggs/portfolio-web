@@ -34,7 +34,6 @@ export default function Options() {
   const workRef = useRef<HTMLAnchorElement>(null);
   const aboutRef = useRef<HTMLAnchorElement>(null);
 
-
   const elementRefs = [workRef, aboutRef];
 
   // Ensure the hook runs after refs are assigned
@@ -83,17 +82,13 @@ export default function Options() {
           <div className="flex flex-row w-1/2 mx-auto mt-24">
             <div className="text-center w-full flex flex-col gap-y-10 ">
               <h1>
-                <Link href="/works">
-                  <b ref={workRef} tabIndex={0}>
-                    Music Volume
-                  </b>
+                <Link ref={workRef} tabIndex={0} href="/works">
+                  Music Volume
                 </Link>
               </h1>
               <h1>
-                <Link href="/about">
-                  <b ref={aboutRef} tabIndex={0}>
-                    Sound Effects Volume
-                  </b>
+                <Link ref={aboutRef} tabIndex={0} href="/about">
+                  Sound Effects Volume
                 </Link>
               </h1>
             </div>

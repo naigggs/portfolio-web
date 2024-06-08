@@ -18,11 +18,11 @@ b{
   cursor: none;
 }
 
-b:focus{
+a:focus{
   outline: none;
 }
 
-b:focus::before {
+a:focus::before {
   /* outline: none; */
   content: '[*]'; /* Unicode arrow */
   margin-right: 10px;
