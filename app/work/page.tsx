@@ -85,7 +85,6 @@ export default function Works() {
   return (
     <div
       id="game-container"
-      tabIndex={1}
       onKeyDown={handleKeyDown}
       className="flex justify-center items-center w-screen h-screen relative outline-none"
     >

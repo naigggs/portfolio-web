@@ -89,21 +89,21 @@ export default function Home() {
             <div className="text-center w-full flex flex-col gap-y-10 ">
               <h1>
                 <Link href="/works">
-                  <b ref={workRef} tabIndex={1}>
+                  <b ref={workRef}>
                     Works
                   </b>
                 </Link>
               </h1>
               <h1>
                 <Link href="/about">
-                  <b ref={aboutRef} tabIndex={2}>
+                  <b ref={aboutRef}>
                     About
                   </b>
                 </Link>
               </h1>
               <h1>
                 <Link href="/contact">
-                  <b ref={contactRef} tabIndex={3}>
+                  <b ref={contactRef}>
                     Contact
                   </b>
                 </Link>
@@ -112,21 +112,21 @@ export default function Home() {
             <div className="text-center mx-auto w-full flex flex-col gap-y-10">
               <h1>
                 <Link href="/options">
-                  <b ref={ref1} tabIndex={4}>
+                  <b ref={ref1}>
                     Options
                   </b>
                 </Link>
               </h1>
               <h1>
                 <Link href="#">
-                  <b ref={ref2} tabIndex={5}>
+                  <b ref={ref2}>
                     T.B.A.
                   </b>
                 </Link>
               </h1>
               <h1>
                 <Link href="/c#">
-                  <b ref={ref3} tabIndex={6}>
+                  <b ref={ref3}>
                     T.B.A.
                   </b>
                 </Link>
